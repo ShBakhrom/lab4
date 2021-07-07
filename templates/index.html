@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISH CLASSIFIER</title>
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='mycss.css') }}">
+</head>
+<body>
+    <h1>Predict Fish Species</h1>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <div class="form-group">
+            <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="text" name="Weight" placeholder="Weight" required="required" />
+                    </li>
+                    <li class="list-group-item">
+                        <input type="text" name="Length1" placeholder="Length1" required="required" />
+                    </li>
+                    <li class="list-group-item">
+                        <input type="text" name="Length2" placeholder="Length2" required="required" />
+                    </li>
+                    <li class="list-group-item">
+                        <input type="text" name="Length3" placeholder="Length3" required="required" />
+                    </li>
+                    <li class="list-group-item">
+                        <input type="text" name="Height" placeholder="Height" required="required" />
+                    </li>
+                    <li class="list-group-item">
+                        <input type="text" name="Width" placeholder="Width" required="required" />
+                    </li>
+            </ul>
+                
+        </div>
+        
+        <div class="button"><button type="submit" class="btn" id="add-btn">Predict</button></div>
+        
+    </form>
+    <br>
+    <p class="result"> {{ prediction_text }} </p>
+    
+</body>
+</html>

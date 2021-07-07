@@ -1,0 +1,47 @@
+html{
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    
+}
+
+
+body{
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+
+    background-color: #6c757d;
+}
+h1{
+  font-weight:bold;
+  color: white;
+  text-align: center;
+}
+
+.list-group-item.mouseover {
+    background: #fafafa;
+    cursor: pointer;
+  }
+  
+  .list-group-item .remove-item.mouseover {
+    background: #aaf;
+    cursor: pointer;
+  }
+  
+  .result{
+      color: white;
+    font-size: 35px;
+    text-align: center;
+  }
+  input{
+      width: 100%;
+      border: none;
+  }
+  .btn{
+      width: 100%;
+  }
+  .button{
+    justify-content: center;
+    align-items: center;
+    text-align: center
+  }
